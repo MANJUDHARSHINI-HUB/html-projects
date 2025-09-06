@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Categories</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        
+        .hero {
+            background: url('https://t3.ftcdn.net/jpg/08/66/08/38/360_F_866083897_L6Gou35nvKDwQGWufFYXlBlpcl18ZSNl.jpg') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .category img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .category p {
+            font-size: 1.2em;
+        }
+
+        /* Offers & Recommendations */
+        .offers, .recommendations {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .offer, .recommend {
+            width: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .offer img, .recommend img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form textarea, form button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: #d147a3;
+        }
+
+        
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff69b4;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header class="hero">
+        <h1>Welcome to Flower Boutique</h1>
+        <p>Fresh flowers for every occasion</p>
+    </header>
+
+ 
+    <h1>Choose Your Occasion</h1>
+    <div class="categories">
+        <div class="category">
+            <a href="wedding.html"><img src="https://i.pinimg.com/736x/54/12/ae/5412ae3ddcb5a96ef4869329cdfa68a9.jpg" alt="Wedding Bouquets"><p>Weddings</p></a>
+        </div>
+        <div class="category">
+            <a href="party.html"><img src="https://www.floristika.com.my/cdn/shop/files/VH01.jpg?v=1737344783" alt="Party Bouquets"><p>Parties</p></a>
+        </div>
+        <div class="category">
+            <a href="birthday.html"><img src="https://flowersugar.com/cdn/shop/files/Emerald_meadow_table_1080x.jpg?v=1688655341" alt="Birthday Bouquets"><p>Birthdays</p></a>
+        </div>
+        <div class="category">
+            <a href="anniversary.html"><img src="https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1735696750/vendor/9260/catalog/product/2/0/20240330074157_file_6607c245e3fcb_6607c2c3f264b.webp" alt="Anniversary Bouquets"><p>Anniversaries</p></a>
+        </div>
+        <div class="category">
+            <a href="sympathy.html"><img src="https://www.flowerchimp.com/cdn/shop/files/3a_eb7b3aef-a7db-443d-850f-4ca51d14ee03_1600x.jpg?v=1693994023" alt="Sympathy Flowers"><p>Sympathy</p></a>
+        </div>
+    </div>
+
+   
+    <h2>Special Offers</h2>
+    <div class="offers">
+        <div class="offer">
+            <img src="https://www.unrealgift.com/uploads/61798d845c140146a7db9330/18a.jpg" alt="Romantic Roses">
+            <p><strong>Romantic Rose Bouquet</strong> - $25 <br> A beautiful arrangement of fresh red roses.</p>
+            <a href="order.html">Order Now</a>
+        </div>
+        <div class="offer">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/mixed-flower-bouquet-royalty-free-image-1728336500.jpg" alt="Spring Mix">
+            <p><strong>Spring Blossom Mix</strong> - $30 <br> A colorful mix of tulips and lilies.</p>
+            <a href="order.html">Order Now</a>
+        </div>
+    </div>
+
+  
+    <h2>Recommended Bouquets</h2>
+    <div class="recommendations">
+        <div class="recommend">
+            <img src="https://image.floranext.com/instances/elegantflowersfresno_com/catalog/product/i/m/img_4166_1.jpg.webp?h=700&w=700&r=255&g=255&b=255" alt="Elegant White">
+            <p><strong>Elegant White Bouquet</strong> - $28 <br> Pure white lilies for a classic touch.</p>
+            <a href="order.html">Order Now</a>
+        </div>
+        <div class="recommend">
+            <img src="https://flowersmanila.com/cdn/shop/products/296582392_623541682280003_5695555043883292808_n.jpg?v=1659291106" alt="Sunflower Joy">
+            <p><strong>Sunflower Joy</strong> - $22 <br> Bright sunflowers to spread happiness.</p>
+            <a href="order.html">Order Now</a>
+        </div>
+    </div>
+
+
+    <h2>Customize Your Bouquet</h2>
+    <form action="order.html">
+        <label>Flower Type:</label>
+        <input type="text" placeholder="Enter flower name" required>
+
+        <label>Color Preference:</label>
+        <input type="text" placeholder="Enter color choice" required>
+
+        <label>Special Message:</label>
+        <textarea placeholder="Enter a message for the bouquet"></textarea>
+
+        <button type="submit">Order Customized Bouquet</button>
+    </form>
+
+    <nav>
+        <a href="index.html">Back to Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</body>
+</html>
